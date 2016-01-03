@@ -22,8 +22,9 @@ unsigned long getDuration(unsigned long timeStart, unsigned long timeFinish)
 {
   unsigned long duration;
 
-  Serial.println("timeFinish: " + String(timeFinish));
-  Serial.println("timeStart: " + String(timeStart));
+  //Serial.println("timeFinish: " + String(timeFinish));
+  //Serial.println("timeStart: " + String(timeStart));
+  
   if(timeFinish < timeStart)
   {
     duration = ((4294967296 - timeStart)+(timeFinish)); // Max value of unsigned is 4294967296.
